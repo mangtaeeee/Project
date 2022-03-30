@@ -43,7 +43,7 @@ public class CartController {
 		isExist = cartService.isExist(cvo);
 		if (isExist == 1) { // 이미 장바구니에 존재하는 상품
 			return "existed"; 
-		} else {			// 장바구니에 존재하지 않는 상품
+		} else {			// 장바구니에 존재하지 않는 상품 
 			cartService.insertCart(cvo);
 			return "success";
 		}
