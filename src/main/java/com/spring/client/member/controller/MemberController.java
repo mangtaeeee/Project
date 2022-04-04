@@ -33,7 +33,6 @@ import lombok.extern.log4j.Log4j;
 @Controller
 @RequestMapping("/member/*")
 @Log4j
-@AllArgsConstructor
 public class MemberController {
 	
 	@Setter(onMethod_= @Autowired)
