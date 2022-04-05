@@ -15,7 +15,7 @@ import lombok.Setter;
 @Service
 public class ReviewServiceImpl implements ReviewService {
 	
-	
+	@Resource
 	private final ReviewDAO  reviewDao;
 	
 	
