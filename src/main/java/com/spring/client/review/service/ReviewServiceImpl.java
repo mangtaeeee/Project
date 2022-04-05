@@ -11,12 +11,12 @@ import com.spring.client.review.vo.ReviewVO;
 import com.spring.common.file.FileUploadUtil;
 
 import lombok.Setter;
-
+@AllArgsConstructor
 @Service
 public class ReviewServiceImpl implements ReviewService {
 	
-	@Setter(onMethod_ = @Autowired)
-	private ReviewDAO  reviewDao;
+	
+	private final ReviewDAO  reviewDao;
 	
 	
 	//게시판 리스트 구현
