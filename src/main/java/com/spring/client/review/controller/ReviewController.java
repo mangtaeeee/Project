@@ -29,10 +29,10 @@ import lombok.extern.log4j.Log4j;
 @AllArgsConstructor
 public class ReviewController {
 	
-	@Setter(onMethod_= @Autowired)
-	private ReviewService reviewService;
-	@Setter(onMethod_ = @Autowired)
-	private HttpSession session;
+	
+	private final ReviewService reviewService;
+	
+	private final HttpSession session;
 	
 	/**********
 	 * 리뷰게시판 구현
