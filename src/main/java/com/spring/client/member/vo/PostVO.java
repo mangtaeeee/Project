@@ -7,9 +7,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 @Data
-@EqualsAndHashCode(callSuper=false)
-@AllArgsConstructor
-@NoArgsConstructor
 public class PostVO extends CommonVO{
 	private int r_num = 0; //리뷰게시판번호
 	private String r_title = ""; //리뷰게시판 제목
