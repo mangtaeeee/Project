@@ -1,16 +1,8 @@
 package com.spring.client.member.vo;
 
-
-
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 
 @Data
-@EqualsAndHashCode(callSuper=false)
-@AllArgsConstructor
-@NoArgsConstructor
 public class MemberVO {
 	private int m_num = 0; // 회원번호
 	private String m_id =""; // 회원아이디
