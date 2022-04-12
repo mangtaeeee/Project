@@ -12,11 +12,10 @@ import com.spring.client.member.vo.PostVO;
 
 import lombok.Setter;
 @Service
-@RequiredArgsConstructor 
 public class MemberServiceImpl implements MemberService{
 	
-	
-	private final MemberDAO memberDao;
+	@Resource
+	private MemberDAO memberDao;
 
 	
 	//마이페이지 구현
