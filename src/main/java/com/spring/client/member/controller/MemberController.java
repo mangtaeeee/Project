@@ -33,12 +33,13 @@ import lombok.extern.log4j.Log4j;
 @Controller
 @RequestMapping("/member/*")
 @Log4j
+@RequiredArgsConstructor
 public class MemberController {
 	
-	@Setter(onMethod_= @Autowired)
-	private MemberService memberService;
-	@Setter(onMethod_ = @Autowired)
-	private HttpSession session;
+	
+	private final MemberService memberService;
+	
+	private final HttpSession session;
 	
 	/**************
 	 * 마이페이지 구현하기
