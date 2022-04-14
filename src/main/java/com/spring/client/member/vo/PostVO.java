@@ -5,7 +5,8 @@ import com.spring.common.vo.CommonVO;
 
 import lombok.Data;
 
-@Data
+@Getter
+@Setter
 public class PostVO extends CommonVO{
 	private int r_num = 0; //리뷰게시판번호
 	private String r_title = ""; //리뷰게시판 제목
