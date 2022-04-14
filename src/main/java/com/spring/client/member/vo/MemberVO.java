@@ -2,7 +2,8 @@ package com.spring.client.member.vo;
 
 import lombok.Data;
 
-@Data
+@Getter
+@Setter
 public class MemberVO {
 	private int m_num = 0; // 회원번호
 	private String m_id =""; // 회원아이디
