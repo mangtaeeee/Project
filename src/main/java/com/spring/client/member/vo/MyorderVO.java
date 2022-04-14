@@ -5,7 +5,8 @@ import com.spring.common.vo.CommonVO;
 
 import lombok.Data;
 
-@Data
+@Getter
+@Setter
 public class MyorderVO extends CommonVO{
 	private long order_num = 0;            // 주문 번호
 	   private int order_totalPayment = 0;      // 결제금액
