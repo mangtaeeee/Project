@@ -49,40 +49,39 @@
 	
 	</head>
 	<body>
-	<div>
+		<div>
 			<form id="r_writeForm">
-			<input type="hidden" id="m_id" value="${login.m_id}" name="m_id">
-				<div style="font-weight: bold;font-size: 36px; text-align:center;">REVIEW</div>
-				<div class="form-group">
-					<label for="m_id">작성자</label> 
-						<h4>${login.m_name}</h4>
-				</div>
-				<div class="form-group">
-					<label for="r_title">글제목</label> 
-					<input type="text" class="form-control" name="r_title" id="r_title"
-						placeholder="글제목 입력" maxlength="300">
-				</div>
-				<div class="form-group">
-					<label for="r_content">글내용</label> 
-					<textarea class="form-control" rows="30" name="r_content" id="r_content">
-키 :
-몸무게 :
-착용 사이즈 :
-후기 :
-</textarea>
-				</div>
-				<div class="form-group">
-					<label>파일첨부</label> 
-					<input type="file" class="form-control" name="file" id="file">
-				</div>
-				<div class="text-right">
-					<button type="button" class="btn btn-success" id="reviewInsertBtn">저장</button>
-						<div class="text-left">
-							<button type="button" class="btn btn-success" id="reviewListBtn">목록</button>
-						</div>
-				</div>
+				<input type="hidden" id="m_id" value="${login.m_id}" name="m_id">
+					<div style="font-weight: bold;font-size: 36px; text-align:center;">REVIEW</div>
+					<div class="form-group">
+						<label for="m_id">작성자</label> 
+							<h4>${login.m_name}</h4>
+					</div>
+					<div class="form-group">
+						<label for="r_title">글제목</label> 
+						<input type="text" class="form-control" name="r_title" id="r_title"
+							placeholder="글제목 입력" maxlength="300">
+					</div>
+					<div class="form-group">
+						<label for="r_content">글내용</label> 
+						<textarea class="form-control" rows="30" name="r_content" id="r_content">
+							키 :
+							몸무게 :
+							착용 사이즈 :
+							후기 :
+						</textarea>
+					</div>
+					<div class="form-group">
+						<label>파일첨부</label> 
+						<input type="file" class="form-control" name="file" id="file">
+					</div>
+					<div class="text-right">
+						<button type="button" class="btn btn-success" id="reviewInsertBtn">저장</button>
+							<div class="text-left">
+								<button type="button" class="btn btn-success" id="reviewListBtn">목록</button>
+							</div>
+					</div>
 			</form>
 		</div>
-	
 	</body>
 </html>
