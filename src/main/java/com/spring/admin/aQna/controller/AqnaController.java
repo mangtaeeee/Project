@@ -23,7 +23,7 @@ import lombok.extern.log4j.Log4j;
 @Controller
 @RequestMapping("/aQna/*")
 @Log4j
-@AllArgsConstructor // 생성자 주입
+@AllArgsConstructor 
 public class AqnaController {
 	private AqnaService aQnaService;
 	
