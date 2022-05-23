@@ -44,7 +44,7 @@ public class MemberController {
 	/**************
 	 * 마이페이지 구현하기
 	 * *************/
-	@RequestMapping(value = "/mypage", method = { RequestMethod.GET, RequestMethod.POST})
+	@GetMapping
 	public String MemberMypage(@ModelAttribute("data") MemberVO mvo,MyorderVO ovo, Model model) {
 		log.info("mypage 호출 성공");
 		
@@ -67,7 +67,7 @@ public class MemberController {
 	/****************
 	 * 회원 정보 수정 화면 구현
 	 *********************/
-	@RequestMapping("/updateForm")
+	@GetMapping("/updateForm")
 	public String updateForm(@ModelAttribute("data") MemberVO mvo, Model model) {
 		log.info("updateForm 호출 성공");
 		
@@ -107,7 +107,7 @@ public class MemberController {
 	/********************************************
 	 * 회원 탈퇴 처리
 	 * *****************************************/
-	@GetMapping("/memberDelete")
+	@PostMapping("/memberDelete")
 	public String memberDelete(@ModelAttribute MemberVO mvo, RedirectAttributes ras) {
 		log.info("memberDelete 호출 성공");
 		
