@@ -57,7 +57,7 @@ public class ReviewController {
 	/**************************************************
 	 * 글쓰기 폼 출력 -- 수정 버튼 클릭시 아이디가 같지않으면 다시 뒤로 돌려보내는거 해야함
 	 * *************************************************/
-	@RequestMapping(value="/writeForm")
+	@GetMapping(value="/writeForm")
 	public String writeForm(MemberVO mvo,Model model) {
 		log.info("write 호출 성공");
 		
