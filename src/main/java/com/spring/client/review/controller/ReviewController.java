@@ -107,7 +107,7 @@ public class ReviewController {
 	/***************************************************
 	 * 글 수정 폼 출력
 	 * ***************/
-	@RequestMapping("updateForm")
+	@GetMapping("updateForm")
 	public String updateForm(@ModelAttribute("data") ReviewVO rvo, Model model) {
 		log.info("updateForm 호출 성공");
 		
