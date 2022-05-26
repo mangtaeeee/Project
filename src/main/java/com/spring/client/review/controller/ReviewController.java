@@ -26,6 +26,7 @@ import lombok.extern.log4j.Log4j;
 @Controller
 @RequestMapping(value="/review/*")
 @Log4j
+@RequiredArgsConstructor
 public class ReviewController {
 	
 	
@@ -92,7 +93,7 @@ public class ReviewController {
 	/*******************************************************
 	 * 글 상세 보기 구현
 	 * ****************************************************/
-	@RequestMapping(value="/reviewDetail", method = RequestMethod.GET)
+	@GetMapping(value="/reviewDetail")
 	public String reviewDetail(@ModelAttribute("data") ReviewVO rvo, Model model) {
 		log.info("reviewDetail 호출 성공");
 		
