@@ -236,7 +236,7 @@ public class MemberController {
 		}
 		
 		/*로그아웃*/
-		@RequestMapping(value = "/logout", method = RequestMethod.GET)
+		@GetMapping(value = "/logout", method = RequestMethod.GET)
 		public String logout(HttpServletRequest request) {
 			log.info("logout 성공");
 			
