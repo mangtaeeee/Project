@@ -195,7 +195,7 @@ public class MemberController {
 /*------------------ 최태준 영역 ------------------*/
 	
 	//회원가입페이지이동
-		@RequestMapping(value="/joinmember", method=RequestMethod.GET)
+		@GetMapping(value="/joinmember")
 		public String memberInsert() throws Exception {
 		log.info("회원가입페이지출력");
 			return "member/joinmember";
