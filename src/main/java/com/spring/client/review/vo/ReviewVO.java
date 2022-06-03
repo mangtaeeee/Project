@@ -12,10 +12,6 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Data
-@EqualsAndHashCode(callSuper=false)
-@AllArgsConstructor
-@NoArgsConstructor
-@ToString
 public class ReviewVO extends CommonVO {
 	private int r_num = 0; //게시판번호
 	private MultipartFile file; //첨부파일
