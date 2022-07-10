@@ -160,9 +160,6 @@ public class MemberController {
 		return "member/myorderList";
 		
 	}
-
-	
-/*------------------ 최태준 영역 ------------------*/
 	
 	//회원가입페이지이동
 		@GetMapping(value="/joinmember")
@@ -171,7 +168,7 @@ public class MemberController {
 			return "member/joinmember";
 	}
 		//회원가입처리
-		@RequestMapping(value = "/memberInsert", method= RequestMethod.POST)
+		@PostMapping(value = "/memberInsert")
 		public String memberInsert(MemberVO memberVO) throws Exception {
 			log.info("회원가입처리성공");
 			
@@ -180,13 +177,13 @@ public class MemberController {
 			return "redirect:/member/loginForm";
 		}
 		/*로그인페이지출력*/
-		@RequestMapping(value="/loginForm")
+		@GetMapping(value="/loginForm")
 		public String loginForm()  {
 			log.info("로그인페이지출력성공");
 			return "member/loginForm";
 		}
 		/*로그인처리*/
-		@RequestMapping(value="/login")
+		@PostMapping(value="/login")
 		public String login(MemberVO mvo, HttpServletRequest req, Model model) {
 			log.info("로그인성공");
 			String path = null;
@@ -206,7 +203,7 @@ public class MemberController {
 		}
 		
 		/*로그아웃*/
-		@GetMapping(value = "/logout", method = RequestMethod.GET)
+		@GetMapping(value = "/logout")
 		public String logout(HttpServletRequest request) {
 			log.info("logout 성공");
 			
